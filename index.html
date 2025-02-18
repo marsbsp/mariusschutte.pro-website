@@ -7,13 +7,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./Assets/MS_icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./Assets/MS.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
     
     <section id="marius-schutte">
 
         <div class="container c1">
-            <img src="./Assets/MS.png" alt="Marius Schutte Logo">
+            <a href="#home"><img src="./Assets/MS.png" alt="Marius Schutte Logo"></a>
             <div id="marius-schutte-profile">
                 <img src="./Assets/profile-photo.png" alt="Photo of Marius Schutte">
                 <h1>Marius <span>Schutte</span></h1>
@@ -32,6 +33,96 @@
         </div>
 
     </section>
+
+    <header>
+
+        <nav>
+            <div class="nav-elements">
+                <div>
+                    <a class="first-nav-entry" href="#marius-schutte">Marius Schutte</a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div class="section-container">
+                <h2>Home</h2>
+                <h3>My name is Marius Schutte and I'm and aspiring chartered accountant. [this website is under construction and isn't reponsive for all screen sizes]</h3>
+                <p>
+                    Business is in a constant state of evolution. It is always influenced by the changing needs of consumers. Technology perpetually shapes the industry, with AI and blockchain, just to name a few, being some of the biggest influences right now. However, the needs of stakeholders haven’t changed. Transparency and accurate information are still crucial.
+
+                    <br><br>
+
+                    Accountants need to evolve in the same way that business does. I accept this challenge and intend to evolve with the needs of stakeholders to provide them with fair and accurate information in a changing world.
+
+                    <br><br>                    
+
+                    My goal is to qualify as a chartered accountant and take on this responsibility with the necessary competencies, professional values, and the highest ethics.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-container">
+                <h2>About Me</h2>
+                <p>
+                    I am a dedicated and driven university graduate with a strong commitment to lifelong learning and professional development. Passionate about continuous growth, I actively seek opportunities to enhance my skills and knowledge to remain at the forefront of an ever-evolving professional landscape. Guided by the principles of integrity and professionalism, I uphold the highest ethical standards, which I believe are foundational to delivering quality service and contributing meaningfully to the success of the organizations I work with. My growing proficiency in accounting, combined with a comprehensive understanding of the pillars upheld by the South African Institute of Chartered Accountants (SAICA), allows me to approach problem-solving, strategic thinking, and decision-making with a well-rounded perspective. I am eager to apply my education and values to make a significant impact in the accounting field."
+                </p>
+            </div>
+        </section>
+
+        <section id="learn">
+            <div class="section-container">
+                <h2>Learn More</h2>
+                <h3>Further information about me can be found here.</h3>
+                <div class="learn-more-buttons">
+                    <a id="learn-more-button" href="./Pages/learn.html#learn-more">Learn More</a>
+                    <a href="">[under construction]</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-container">
+                <h2>Contact Me</h2>
+                <h3>Send me a message or contact me at <span style="text-decoration: underline;">contact@mariuschutte.pro</span></h3>
+                <form id="contact-form" action="">
+                    <input id="contact-form-name" type="text" placeholder="Name" name="name">
+                    <input id="contact-form-number" type="text" placeholder="Number: +27XX-XXX-XXX" name="number">
+                    <input id="contact-form-email" type="text" placeholder="Email: username@email.com" name="email">
+                    <textarea name="message" id="contact-form-message" placeholder="Message"></textarea>
+                    <button type="submit">[under construction]</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            
+            <div>
+                <p>Copyright &#169 mariusschutte.pro <span id="cp-year"></span></p>
+                <ul>
+                    <li><a href="">Linkdn</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="../Scripts/copyright.js"></script>
 
 </body>
 </html>
