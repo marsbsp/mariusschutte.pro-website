@@ -42,7 +42,7 @@ body {
     height: 115px;
     position: absolute;
     top: 0;
-    left: 105px;
+    left: 140px;
     z-index: 1;
 }
 
@@ -417,9 +417,69 @@ footer a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+    #marius-schutte {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #marius-schutte {
+        background-color: saddlebrown;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #marius-schutte {
+        background-color: violet;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #marius-schutte {
         background-color: aquamarine;
+        flex-direction: column;
     }
+
+    #marius-schutte > .container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .c1 > a img {
+        width: 60px;
+        height: 60px;
+        left: 70px;
+    }
+
+    #marius-schutte-profile,
+    #marius-schutte-content {
+        margin: 0 70px 0 70px;
+    }
+
+    #marius-schutte-profile > img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #marius-schutte-profile > h1 {
+        font-size: 42px;
+    }
+
+    #marius-schutte-profile > p {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .c2 {
+        border-radius: 50px 50px 0 0;
+    }
+
+    #marius-schutte-content > p {
+        margin: 45px 0 45px 0;
+        font-size: 22px;
+    }
+
 }
+
 
