@@ -42,10 +42,13 @@
                     <a class="first-nav-entry" href="#marius-schutte">Marius Schutte</a>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#learn">Learn</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="" id="nav-dropdown-button">Navigate</a></li>
+                    <div id="nav-dropdown-content">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#learn">Learn</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -57,7 +60,7 @@
         <section id="home">
             <div class="section-container">
                 <h2>Home</h2>
-                <h3>My name is Marius Schutte and I'm and aspiring chartered accountant. [this website is under construction and isn't reponsive for all screen sizes]</h3>
+                <h3>My name is Marius Schutte and I'm and aspiring chartered accountant. [This website is under construction and some features are still missing.]</h3>
                 <p>
                     Business is in a constant state of evolution. It is always influenced by the changing needs of consumers. Technology perpetually shapes the industry, with AI and blockchain, just to name a few, being some of the biggest influences right now. However, the needs of stakeholders haven’t changed. Transparency and accurate information are still crucial.
 
@@ -97,8 +100,10 @@
                 <h2>Contact Me</h2>
                 <h3>Send me a message or contact me at <span style="text-decoration: underline;">contact@mariuschutte.pro</span></h3>
                 <form id="contact-form" action="">
-                    <input id="contact-form-name" type="text" placeholder="Name" name="name">
-                    <input id="contact-form-number" type="text" placeholder="Number: +27XX-XXX-XXX" name="number">
+                    <div class="contact-container">
+                        <input id="contact-form-name" type="text" placeholder="Name" name="name">
+                        <input id="contact-form-number" type="text" placeholder="Number: +27XX-XXX-XXX" name="number">
+                    </div>
                     <input id="contact-form-email" type="text" placeholder="Email: username@email.com" name="email">
                     <textarea name="message" id="contact-form-message" placeholder="Message"></textarea>
                     <button type="submit">[under construction]</button>
@@ -122,6 +127,7 @@
 
     </main>
 
+    <script src="./Scripts/dropdown.js"></script>
     <script src="../Scripts/copyright.js"></script>
 
 </body>

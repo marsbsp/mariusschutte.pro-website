@@ -58,6 +58,7 @@ body {
 
 #marius-schutte-profile {
     align-items: flex-start;
+    font-size: 80px;
 }
 
 #marius-schutte-profile > img {
@@ -68,7 +69,7 @@ body {
 }
 
 #marius-schutte-profile > h1 {
-    font-size: 82px;
+    font-size: 1em;
     color: var(--darkest);
 }
 
@@ -77,7 +78,7 @@ body {
 }
 
 #marius-schutte-profile > p {
-    font-size: 25px;
+    font-size: 0.25em;
     letter-spacing: 7px;
     color: var(--dark-grey);
 }
@@ -89,12 +90,13 @@ body {
 
 #marius-schutte-content {
     align-items: center;
+    font-size: 80px;
 }
 
 #marius-schutte-content > p {
-    margin: 67px 0 67px 0;
+    margin: 70px 0 70px 0;
     color: var(--lightest-grey);
-    font-size: 42px;
+    font-size: 0.5em;
     font-style: italic;
 }
 
@@ -115,14 +117,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.nav-elements {
     list-style: none;
     font-weight: bold;
+    font-size: 20px;
+}
+
+.first-nav-entry {
+    font-size: 1.2em;
 }
 
 .nav-list li {
+    margin-left: 10px;
     display: inline;
 }
 
@@ -133,18 +138,6 @@ header {
 
 .nav-elements a:hover {
     color: var(--light-grey);
-}
-
-.nav-elements {
-    font-size: 20px;
-}
-
-.first-nav-entry {
-    font-size: 24px;
-}
-
-.nav-list li {
-    margin-left: 10px;
 }
 
 #home,
@@ -186,33 +179,27 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 72px;
 }
 
 .section-container > h2 {
-    font-size: 72px;
+    font-size: 1em;
     color: var(--darkest);
 }
 
 .section-container > h3 {
-    font-size: 24px;
+    font-size: 0.33em;
 }
 
 .section-container > p {
     width: 100%;
     text-align: center;
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 0.28em;
     color: var(--light-grey);
 }
 
-.skills-table {
-    margin-top: 20px;
-    font-size: 17px;
-}
-
 .skills-list {
-    margin-top: 20px;
-    font-size: 20px;
     list-style: none;
     font-weight: bold;
     display: flex;
@@ -221,24 +208,16 @@ header {
     gap: 10px;
 }
 
-#qualifications > div {
-    margin-bottom: 0;
-}
-
-.dropdown-container {
-    margin: 20px 0 70px 0;
-    width: 50vw;
-}
-
-.dropdown-container ul {
+.qualification-list {
     list-style: none;
+    width: 100%;
 }
 
 .dropdown-item {
-    font-size: 24px;
+    font-size: 0.33em;
     text-decoration: none;
     font-weight: bold;
-    color: var(--darker-grey);
+    color: var(--darkest);
 }
 
 .dropdown-item:hover {
@@ -268,21 +247,25 @@ header {
 .dropdown-content table,
 .dropdown-content p {
     color: var(--light-grey);
-    font-size: 18px;
+    font-size: 0.25em;
 }
 
 .dropdown-content table {
-    margin: 10px 0 10px 0;
+    color: var(--black);
+    margin: 20px 0 20px 0;
 }
 
 .dropdown-content p {
-    margin: 0 0 10px 0;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 0 0;
     border-top: #000000 1px solid;
 } 
 
 .dropdown-content th:nth-child(-n+3) {
-    width: 10%;
+    width: 15%;
+}
+
+.dropdown-content td {
+    vertical-align: top;
 }
 
 .learn-more-buttons {
@@ -294,7 +277,7 @@ header {
 }
 
 .learn-more-buttons a {
-    font-size: 24px;
+    font-size: .33em;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 40px 10px 40px;
@@ -310,50 +293,41 @@ header {
     border: none;
 }
 
-.section-container form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 3fr 0.5fr;
-    column-gap: 10px;
-    row-gap: 10px;
+#contact-form {
     margin-top: 30px;
+    width: 50vw;
     height: 50vh;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+    gap: 10px;
 }
 
 #contact-form-name {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    width: 50%;
 }
 
 #contact-form-number {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    width: 50%;
 }
 
 #contact-form-email {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    height: 10%;
 }
 
 #contact-form-message {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    height: 50%;
 }
 
 #contact-form button {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    height: 15%;
 }
 
 .section-container form input,
@@ -368,14 +342,14 @@ header {
 .section-container form input::placeholder,
 .section-container form textarea::placeholder {
     color: var(--light-grey);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .section-container form input:active,
 .section-container form textarea:active {
     color: var(--light-grey);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .section-container form textarea {
@@ -386,8 +360,12 @@ header {
     color: var(--white);
     background-color: var(--darkest);
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+footer {
+    font-size: 1rem;
 }
 
 footer div {
@@ -417,33 +395,286 @@ footer a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 14px;
+    }
+
+    .c1 > a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #marius-schutte-profile {
+        font-size: 70px;
+    }
+
+    #marius-schutte-profile > img {
+        width: 275px;
+        height: 275px;
+    }
+
+    #marius-schutte-profile > h1 {
+        font-size: 0.8em;
+    }
+
+    #marius-schutte-profile > p {
+        letter-spacing: 6px;
+    }
+
+    #marius-schutte-content {
+        font-size: 70px;
+    }
+
+    #marius-schutte-content > p {
+        margin: 60px 0 60px 0;
+    }
+
+    .nav-elements {
+        font-size: 16px;
+    }
+
+    .section-container {
+        font-size: 62px;
+    }
+
+    .learn-more-buttons a {
+        padding: 10px 30px 10px 30px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
-    #marius-schutte {
-        background-color: red;
+    html {
+        font-size: 12px;
+    }
+
+    .c1 > a img {
+        width: 90px;
+        height: 90px;
+        left: 115px;
+    }
+
+    #marius-schutte-profile,
+    #marius-schutte-content {
+        margin: 0 115px 0 115px;
+    }
+
+    #marius-schutte-profile {
+        font-size: 60px;
+    }
+
+    #marius-schutte-profile > img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #marius-schutte-profile > h1 {
+        font-size: 0.8em;
+    }
+
+    #marius-schutte-profile > p {
+        letter-spacing: 5px;
+    }
+
+    #marius-schutte-content {
+        font-size: 60px;
+    }
+
+    #marius-schutte-content > p {
+        margin: 55px 0 55px 0;
+    }
+
+    .nav-elements {
+        margin-left: 115px;
+        margin-right: 115px;
+        font-size: 14px;
+    }
+
+    .section-container {
+        font-size: 52px;
+        margin: 50px 115px 50px 115px;
+    }
+
+    #contact-form {
+        height: 40vh;
+    }
+
+    footer div {
+        margin-left: 115px;
+        margin-right: 115px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    #marius-schutte {
-        background-color: saddlebrown;
+    html {
+        font-size: 10px;
+    }
+
+    .c1 > a img {
+        width: 75px;
+        height: 75px;
+        left: 100px
+    }
+
+    #marius-schutte-profile,
+    #marius-schutte-content {
+        margin: 0 105px 0 105px;
+    }
+
+    #marius-schutte-profile {
+        font-size: 50px;
+    }
+
+    #marius-schutte-profile img {
+        width: 175px;
+        height: 175px;
+    }
+
+    #marius-schutte-profile > p {
+        letter-spacing: 4px;
+    }
+
+    #marius-schutte-content {
+        font-size: 50px;
+    }
+
+    #marius-schutte-content > p {
+        margin: 40px 0 40px 0;
+    }
+
+    .nav-elements {
+        margin-left: 105px;
+        margin-right: 105px;
+        font-size: 12px;
+    }
+
+    .section-container {
+        font-size: 42px;
+        margin: 45px 105px 40px 105px;
+    }
+
+    .learn-more-buttons {
+        margin-top: 20px;
+    }
+
+    .learn-more-buttons a {
+        padding: 10px 20px 10px 20px;
+    }
+
+    #contact-form {
+        margin-top: 20px;
+    }
+
+    footer div {
+        margin-left: 105px;
+        margin-right: 105px;
     }
 }
 
 @media screen and (max-width: 768px) {
     #marius-schutte {
-        background-color: violet;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #marius-schutte {
-        background-color: aquamarine;
         flex-direction: column;
     }
 
     #marius-schutte > .container {
         width: 100%;
         height: 50%;
+    }
+
+    .c1 > a img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #marius-schutte-profile > p {
+        letter-spacing: 3px;
+    }
+
+    .c2 {
+        border-radius: 50px 50px 0 0;
+    }
+
+    #marius-schutte-content > p {
+        margin: 25px 0 25px 0;
+    }
+
+    .break {
+        height: 2px;
+    }
+
+    .nav-list li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #nav-dropdown-content {
+        display: none;
+    }
+
+    #nav-dropdown-button:active #nav-dropdown-content {
+        display: block;
+    }
+
+    .section-container {
+        font-size: 52px;
+    }
+
+    .section-container > h2 {
+        text-align: center;
+    }
+
+    .section-container > h3 {
+        text-align: center;
+        font-size: 0.28em;
+    }
+
+    .section-container > p {
+        font-size: 0.23em;
+        margin-top: 10px;
+    }
+
+    .learn-more-buttons {
+        margin-top: 10px;
+    }
+
+    .learn-more-buttons a {
+        padding: 5px 20px 5px 20px;
+        font-size: .23em;
+    }
+
+    #contact-form {
+        height: 50vh;
+        margin-top: 10px;
+    }
+
+    .contact-container {
+        flex-wrap: wrap;
+        height: 30%;
+        width: 100%;
+    }
+
+    #contact-form-name {
+        width: 100%;
+    }
+
+    #contact-form-number {
+        width: 100%;
+    }
+
+    #contact-form-message {
+        height: 40%;
+    }
+
+    footer li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
     }
 
     .c1 > a img {
@@ -457,29 +688,33 @@ footer a {
         margin: 0 70px 0 70px;
     }
 
-    #marius-schutte-profile > img {
-        width: 180px;
-        height: 180px;
+    #marius-schutte-profile {
+        font-size: 40px;
     }
-
-    #marius-schutte-profile > h1 {
-        font-size: 42px;
-    }
-
+    
     #marius-schutte-profile > p {
-        font-size: 15px;
         letter-spacing: 3px;
     }
 
-    .c2 {
-        border-radius: 50px 50px 0 0;
+    #marius-schutte-content {
+        font-size: 40px;
     }
 
-    #marius-schutte-content > p {
-        margin: 45px 0 45px 0;
-        font-size: 22px;
+    .nav-elements {
+        margin-left: 70px;
+        margin-right: 70px;
+        font-size: 10px;
     }
 
+    .section-container {
+        margin: 35px 70px 35px 70px;
+        font-size: 42px;
+    }
+
+    footer div {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
 }
 
 

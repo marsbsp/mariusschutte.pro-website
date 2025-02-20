@@ -19,4 +19,12 @@ $(document).ready(function(){
         });
     }
 
+    const navDropDownButton = $("#nav-dropdown-button");
+    const navDropDownContent = $("#nav-dropdown-content");
+
+    navDropDownButton.click(function(event) {
+        event.preventDefault();
+
+    });
+
 });
