@@ -291,10 +291,22 @@ header {
     border-radius: 50px; 
 }
 
+.learn-more-buttons a:hover {
+    box-shadow: 5px 5px 5px var(--light-grey);
+}
+
 #learn-more-button {
     color: var(--white);
     background-color: var(--darkest);
     border: none;
+}
+
+.learn-more-buttons a:active {
+    color: var(--light-grey);
+}
+
+#learn-more-button:active {
+    color: var(--light-grey);
 }
 
 #contact-form {
@@ -332,6 +344,10 @@ header {
 
 #contact-form button {
     height: 15%;
+}
+
+#contact-form button:active {
+    color: var(--light-grey);
 }
 
 .section-container form input,

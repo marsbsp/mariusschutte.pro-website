@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./Assets/MS.png">
     <link rel="stylesheet" href="./Styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     
@@ -91,7 +92,7 @@
                 <h3>Further information about me can be found here.</h3>
                 <div class="learn-more-buttons">
                     <a id="learn-more-button" href="./Pages/learn.html#learn-more">Learn More</a>
-                    <a href="">[under construction]</a>
+                    <a href="./Documents/Professional CV Resume.pdf" download="Professional CV Resume.pdf">Download CV</a>
                 </div>
             </div>
         </section>
@@ -99,15 +100,16 @@
         <section id="contact">
             <div class="section-container">
                 <h2>Contact Me</h2>
-                <h3>Send me a message or contact me at <span style="text-decoration: underline;">contact@mariuschutte.pro</span></h3>
-                <form id="contact-form" action="">
+                <h3>Send me a message or contact me at <span style="text-decoration: underline;">contact@mariusschutte.pro</span></h3>
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"> 
+                    <input type="hidden" name="access_key" value="3d914b19-955f-4775-9972-0d9fdf473636">
                     <div class="contact-container">
-                        <input id="contact-form-name" type="text" placeholder="Name" name="name">
-                        <input id="contact-form-number" type="text" placeholder="Number: +27XX-XXX-XXX" name="number">
+                        <input id="contact-form-name" type="text" placeholder="Name" name="name" required>
+                        <input id="contact-form-number" type="number" placeholder="Number: +27XX-XXX-XXX" name="number">
                     </div>
-                    <input id="contact-form-email" type="text" placeholder="Email: username@email.com" name="email">
-                    <textarea name="message" id="contact-form-message" placeholder="Message"></textarea>
-                    <button type="submit">[under construction]</button>
+                    <input id="contact-form-email" type="email" placeholder="Email: username@email.com" name="email" required>
+                    <textarea name="message" id="contact-form-message" placeholder="Message" required></textarea>
+                    <button type="submit" id="contact-form-button">Send Message</button>
                 </form>
             </div>
         </section>
