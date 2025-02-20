@@ -651,6 +651,7 @@ footer a {
     #contact-form {
         height: 50vh;
         margin-top: 10px;
+        width: 60vw;
     }
 
     .contact-container {
