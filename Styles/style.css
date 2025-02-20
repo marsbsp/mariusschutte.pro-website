@@ -126,6 +126,10 @@ header {
     font-size: 1.2em;
 }
 
+#nav-dropdown-button {
+    display: none;
+}
+
 .nav-list li {
     margin-left: 10px;
     display: inline;
@@ -608,12 +612,13 @@ footer a {
         margin-bottom: 10px;
     }
 
-    #nav-dropdown-content {
+    .nav-dropdown-content {
         display: none;
     }
 
-    #nav-dropdown-button:active #nav-dropdown-content {
+    #nav-dropdown-button {
         display: block;
+        justify-self: flex-end;
     }
 
     .section-container {
