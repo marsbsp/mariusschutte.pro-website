@@ -183,7 +183,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 72px;
+    font-size: 82px;
 }
 
 .section-container > h2 {
@@ -193,6 +193,7 @@ header {
 
 .section-container > h3 {
     font-size: 0.33em;
+    text-align: center;
 }
 
 .section-container > p {
@@ -200,7 +201,7 @@ header {
     text-align: center;
     margin-top: 20px;
     font-size: 0.28em;
-    color: var(--light-grey);
+    color: var(--black);
 }
 
 .skills-list {
@@ -250,18 +251,18 @@ header {
 
 .dropdown-content table,
 .dropdown-content p {
-    color: var(--light-grey);
+    color: var(--black);
     font-size: 0.25em;
 }
 
 .dropdown-content table {
-    color: var(--black);
     margin: 20px 0 20px 0;
 }
 
 .dropdown-content p {
     padding: 20px 0 0 0;
     border-top: #000000 1px solid;
+    font-weight: 600;
 } 
 
 .dropdown-content th:nth-child(-n+3) {
@@ -281,6 +282,7 @@ header {
 }
 
 .learn-more-buttons a {
+    text-align: center;
     font-size: .33em;
     text-decoration: none;
     font-weight: bold;
@@ -418,10 +420,6 @@ footer a {
 }
 
 @media screen and (max-width: 1400px) {
-    html {
-        font-size: 14px;
-    }
-
     .c1 > a img {
         width: 100px;
         height: 100px;
@@ -453,11 +451,11 @@ footer a {
     }
 
     .nav-elements {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .section-container {
-        font-size: 62px;
+        font-size: 72px;
     }
 
     .learn-more-buttons a {
@@ -467,7 +465,7 @@ footer a {
 
 @media screen and (max-width: 1200px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .c1 > a img {
@@ -509,11 +507,10 @@ footer a {
     .nav-elements {
         margin-left: 115px;
         margin-right: 115px;
-        font-size: 14px;
     }
 
     .section-container {
-        font-size: 52px;
+        font-size: 62px;
         margin: 50px 115px 50px 115px;
     }
 
@@ -529,7 +526,7 @@ footer a {
 
 @media screen and (max-width: 1024px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .c1 > a img {
@@ -567,11 +564,11 @@ footer a {
     .nav-elements {
         margin-left: 105px;
         margin-right: 105px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .section-container {
-        font-size: 42px;
+        font-size: 62px;
         margin: 45px 105px 40px 105px;
     }
 
@@ -624,6 +621,13 @@ footer a {
         height: 2px;
     }
 
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        backdrop-filter: blur(5px);
+    }
+    
     .nav-list li {
         display: block;
         margin-left: 0;
@@ -640,7 +644,7 @@ footer a {
     }
 
     .section-container {
-        font-size: 52px;
+        font-size: 62px;
     }
 
     .section-container > h2 {
@@ -653,23 +657,41 @@ footer a {
     }
 
     .section-container > p {
+        width: 60vw;
         font-size: 0.23em;
         margin-top: 10px;
     }
 
+    .section-container > h2 {
+        font-size: 0.7em;
+    }
+
+    #qualifications {
+        height: auto;
+    }
+
+
     .learn-more-buttons {
         margin-top: 10px;
+        flex-direction: column;
     }
 
     .learn-more-buttons a {
         padding: 5px 20px 5px 20px;
-        font-size: .23em;
     }
 
     #contact-form {
         height: 50vh;
         margin-top: 10px;
         width: 60vw;
+    }
+
+    #skills {
+        height: auto;
+    }
+
+    .dropdown-item {
+        font-size: 0.23em;
     }
 
     .contact-container {
@@ -698,7 +720,7 @@ footer a {
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .c1 > a img {
@@ -724,15 +746,32 @@ footer a {
         font-size: 40px;
     }
 
+    .qualification-list {
+        width: 60vw;
+    }
+
+    .dropdown-content table,
+    .dropdown-content p {
+        font-size: 0.2em;
+    }
+
     .nav-elements {
         margin-left: 70px;
         margin-right: 70px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .section-container {
         margin: 35px 70px 35px 70px;
-        font-size: 42px;
+        font-size: 52px;
+    }
+
+    .section-container > h2 {
+        font-size: 0.6em;
+    }
+
+    .section-container > h3 {
+        font-size: 0.23em;
     }
 
     footer div {
